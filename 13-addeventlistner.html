@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .list{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .active{
+            color: red;
+            text-decoration: none;
+            font-weight: 900;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Manipulación del DOM</h1>
+
+<!--los formularios interpretan el ultimo boton como de tipo submit es decir una accion de envio de info por lo que
+    hace que la pagina se recargue..-->
+<!--para evitar el comportamiento anterior se puede cambiar que etiqueta es la que va a tener el evento
+    siendo en este caso el formulario y que el tipo de evento no sea click sino submit-->
+<form action="" id="form">
+    <input type="text" id="calculo1" placeholder="escribe algo aqui">
+    <input type="text" id="calculo2" placeholder="escribe algo aqui">
+    <button id="btnCalcular">Calcular</button>
+    <p id="result"></p>
+</form>
+
+<div>  
+       <h2>Lista interactiva</h2>
+       <ul class="list">
+            <li class="item1"><a href="#" class="aitem1" >Primer hover</a></li>
+            <li id="item2"><a href="#">Segundo hover</a></li>
+            <li id="item3"><a href="#">tercer hover</a></li>
+            
+        </ul>
+    </li>
+</div>
+
+   
+
+
+    <script src="./13-main.js"></script>
+</body>
+</html>
